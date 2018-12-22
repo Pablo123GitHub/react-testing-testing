@@ -10,7 +10,9 @@ test('renders without crashing', ()=> {
 describe("Button component", ()=>{
     test("it shows the expected text when clicked (WRONG WAY)", ()=>{
         const component = create(<Button text="I AM A BUTTON"/>)
-        const instance = component.getInstance();
+        const instance = component.getInstance()
         expect(instance.state.text).toBe("")
+        instance.handleClick()
+        expect(instance.state.text).toBe("JUST CLICKED BRO !")
     })
 } )
