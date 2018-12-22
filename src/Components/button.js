@@ -13,10 +13,12 @@ class Button extends Component {
     }
 
 
+
     render () {
         return (
-            <div>HEY THIS IS MY BUTTON COMPONENT</div>
-        )
+            <button onClick={this.handleClick}>{this.state.text || this.props.text}</button>
+
+            )
     }
 }
 
