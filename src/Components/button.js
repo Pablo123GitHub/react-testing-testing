@@ -8,7 +8,7 @@ class Button extends Component {
 
     handleClick = () => {
         this.setState({
-            text: 'JUST CLICKED BRO !'
+            text: 'JUST CLICKED the Button !'
         })
     }
 
@@ -16,9 +16,7 @@ class Button extends Component {
 
     render () {
         return (
-            <button onClick={this.handleClick}>{this.state.text || this.props.text}</button>
-
-            )
+            <button onClick={this.handleClick}>{this.state.text || this.props.text}</button>)
     }
 }
 

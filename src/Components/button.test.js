@@ -13,7 +13,7 @@ describe("Button component", ()=>{
         const instance = component.getInstance()
         expect(instance.state.text).toBe("")
         instance.handleClick()
-        expect(instance.state.text).toBe("JUST CLICKED BRO !")
+        expect(instance.state.text).toBe("JUST CLICKED the Button !")
     })
 
     test("it shows the expected text when clicked THE RIGHT WAY", ()=>{
@@ -21,7 +21,7 @@ describe("Button component", ()=>{
         const rootInstance = component.root
         const button = rootInstance.findByType("button")
         button.props.onClick()
-        expect(button.props.children).toBe("JUST CLICKED BRO !")
+        expect(button.props.children).toBe("JUST CLICKED the Button !")
     })
 
 
